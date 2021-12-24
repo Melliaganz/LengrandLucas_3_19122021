@@ -1,2 +1,2 @@
 REPO p3
-permalink: /Index.html
+permalink: /index.html
