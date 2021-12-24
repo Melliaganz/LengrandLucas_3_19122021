@@ -1,0 +1,198 @@
+/* Header */
+.header {
+    flex-direction: row;
+}
+.top {
+    display: flex;
+    width: 100%;
+}
+.return {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    margin: 28px 0 0 30px;
+}
+.return a {
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+.return i {
+    font-size: 25px;
+}
+.logo {
+    align-items: center;
+    justify-self: center;
+}
+
+/* Main */
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* BG */
+.lne { background-image: url(../images/restaurants/carte2.jpg)}
+.alf { background-image: url(../images/restaurants/carte3.jpg)}
+.lpdg { background-image: url(../images/restaurants/carte1.jpg)}
+.ldds { background-image: url(../images/restaurants/carte4.jpg)}
+
+/* Head */
+.head {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    box-shadow: inset 0 10px 5px -5px #00000087;
+}
+.titre {
+    display: flex;
+    font-size: 20px;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    padding: 30px 20px 20px 20px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
+.titre h2 {
+    font-family: Shrikhand;
+    font-weight: normal;
+    margin: 0;
+}
+.head img {
+    width: 100%;
+    object-fit: cover;
+}
+.titre i {
+    text-shadow: 0 0 3px black;
+}
+.titre .fas {
+    margin-right: 20px;
+    font-size: 25px;
+    color: rgb(245, 245, 245);
+}
+.titre i:hover {
+    color: var(--violet);
+    cursor: pointer;
+    transition: color 0.3s linear;
+}
+.titre i:not(:hover) {
+    color:rgb(245, 245, 245);
+    transition: color 0.3s linear;
+}
+
+/* Menu */
+.menu {
+    background-color: rgb(245, 245, 245);
+}
+.menu h2 {
+    font-weight: normal;
+    font-size: 18px;
+    margin: 20px 0 0 10px;
+}
+.menu .border {
+    margin: 5px 0 25px 10px;
+    width: 45px;
+    height: 3px;
+    color: var(--vert);
+    border-bottom: 5px solid var(--vert);
+}
+.boxes {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    font-size: 25px;
+    overflow: hidden;
+}
+.miam {
+    display: flex;
+    padding: 0 0 0 10px;
+    background-color: white;
+    box-shadow: 0 8px 10px #6161613d;
+    border-radius: 15px;
+    height: 75px;
+    margin-bottom: 20px;
+}
+.miam .gauche {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.miam .droite {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    font-size: 25px;
+    color: white;
+    background-color: var(--vert);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    opacity: 0%;
+}
+.miam h3 {
+    font-size: 18px;
+    margin: 0 0 8px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.miam p {
+    margin: 0;
+    justify-content: space-between;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.miam .prix {
+    display: flex;
+    font-weight: bold;
+    margin-right: 15px;
+    align-items: flex-end;
+    font-size: 15px;
+    margin-bottom: 14px;
+    margin-left: 15px;
+}
+
+/* Order */
+.order {
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+}
+.order .input {
+    cursor: pointer;
+    border-style: none;
+    height: 55px;
+    width: auto;
+    padding: 0 50px;
+    margin-bottom: 70px;
+    font-size: 18px;
+    color: white;
+    border-radius: 50px;
+    background-image: linear-gradient(350deg, var(--violet), var(--rose));
+    box-shadow: 0 7px 5px #6161613d;
+}
+
+/* Version PC */
+@media screen and (min-width: 992px) {
+    .menu_ligne_1, .menu_ligne_2, .menu_ligne_3 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .miam {
+        flex: 1;
+        margin: 0 10px 20px 10px;
+        min-width: 75px;
+    }
+}
