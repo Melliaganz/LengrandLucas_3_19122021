@@ -85,7 +85,7 @@ footer h1 {
 .interieurlocation{
     display: flex;
     align-items: center;
-    margin-left: 50px;
+    padding: 0px 0px 0px 50px;
 }
 .gps {
     display: flex;
