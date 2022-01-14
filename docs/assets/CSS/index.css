@@ -1,3 +1,4 @@
+/* Bloc Explore*/
 .explore {
     display: flex;
     flex-direction: column;
@@ -47,7 +48,7 @@
     height: 100%;
 }
 
-/* Partie Fonction */
+/* Bloc Fonction */
 .fonction {
     display: flex;
     flex-direction: column;
@@ -98,6 +99,8 @@
     font-weight: 600;
     margin-left: 70px;
 }
+/* Logo Fonctionnement */
+
 .mini .fas {
     display: flex;
     padding: 0 0 0 29px;
@@ -105,6 +108,7 @@
     position: absolute;
     width: auto;
 }
+/* Bloc réstaurants */
 
 .restaurants {
     display: flex;
@@ -116,6 +120,8 @@
     font-size: 25px;
     margin-bottom: 10px;
 }
+/* Icône Nouveau */
+
 .restaurants .brand p {
     position: absolute;
     display: flex;
@@ -165,6 +171,9 @@
     margin: 5px 0 0 10px;
     font-size: 20px;
 }
+
+/* Icône coeur*/
+
 .infos .fas {
     display: flex;
     align-self: flex-end;
@@ -193,6 +202,8 @@
 .heart {
     display: flex;
 }
+
+/* media queries pour écran d'ordinateur */
 
 @media screen and (min-width: 992px) {
     .explains {
